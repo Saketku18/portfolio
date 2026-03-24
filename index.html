@@ -1,0 +1,85 @@
+// 📁 Portfolio Folder Structure (Separated by HTML, CSS, JS)
+
+portfolio/
+│
+├── html/
+│   └── index.html
+│
+├── css/
+│   └── styles.css
+│
+├── js/
+│   └── script.js
+│
+├── assets/
+│   └── images/
+│
+└── README.md
+
+
+// 📄 html/index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saket Kumar | Portfolio</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<header>
+  <h2>Saket</h2>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Hello, I'm Saket Kumar</h1>
+  <p>Frontend Developer | C++ DSA | AI Learner</p>
+  <button class="btn" onclick="scrollToSection('projects')">View Projects</button>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>I am a CSE student passionate about web development and scalable systems.</p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="card">
+      <h3>Studyphile</h3>
+      <p>Learning platform.</p>
+    </div>
+    <div class="card">
+      <h3>Cab Pooling</h3>
+      <p>Ride-sharing system.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: saket@example.com</p>
+</section>
+
+<footer>
+  <p>© 2026 Saket Kumar</p>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+// 📄 js/script.js
+function scrollToSection(id) {
+  document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+}
